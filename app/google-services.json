@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "887979526583",
+    "project_id": "storageunitfirebase",
+    "storage_bucket": "storageunitfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887979526583:android:c3616fe8efda6c46018032",
+        "android_client_info": {
+          "package_name": "com.artemis.storageunitfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887979526583-aq571hsvi5pa5vi93bd6c921fd18vkvj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu50VdNKB_0mBSoYtnNR2eOH2iywEkeZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887979526583-aq571hsvi5pa5vi93bd6c921fd18vkvj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

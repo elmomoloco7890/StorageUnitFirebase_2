@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">StorageUnitFirebase</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title">Storage Unit Firebase</string>
+
+
 </resources>
