@@ -2,6 +2,12 @@
     <string name="app_name">StorageUnitFirebase</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="app_title">Storage Unit Firebase</string>
+    <string name="launch_to_main_txt">Launch to Main</string>
+    <string name="description_label_txt">Brief Description</string>
+    <string name="file_type_label_txt">File Type</string>
+    <string name="date_found_label">Date Found</string>
+    <string name="the_url_txt">The Url</string>
+    <string name="back_to_beginning_txt">Back to beginning</string>
 
 
 </resources>

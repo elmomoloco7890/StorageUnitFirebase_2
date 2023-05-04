@@ -27,7 +27,10 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-
+                android:src="@drawable/toolbar_logo"
+                android:padding="6dp"
+                android:layout_marginEnd="10dp"
+                app:civ_circle_background_color="#f9bec1"
                 />
 
             <TextView
@@ -47,9 +50,9 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/storage_unit_nav_host"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:defaultNavGraph="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
