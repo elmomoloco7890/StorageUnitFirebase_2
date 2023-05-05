@@ -63,7 +63,6 @@ class MainUnitFragment : Fragment(), StorageItemClickListener {
     override fun onItemClicked(storageUnit: StorageUnit) {
         for (units in 1..20){
             if (units == 1){
-                sharedViewModel.getToasty(requireActivity(), "It goes to the nacho", Toast.LENGTH_SHORT)
                 val action = MainUnitFragmentDirections.actionMainUnitFragmentToDetailUnitFragment(storageUnit)
                 findNavController().navigate(action)
                 break

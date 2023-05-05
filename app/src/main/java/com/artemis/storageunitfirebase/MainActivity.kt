@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         toolBar.title = ""
         setSupportActionBar(binding.toolbar)
 
+        //toolbar icon
+
+
         // Retrieve NavController from the NavHostFragment
         val navHostFragment = supportFragmentManager
             .findFragmentById(R.id.storage_unit_nav_host) as NavHostFragment
