@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="unit_pink">#f9bec1</color>
+    <color name="unit_red">#541e1e</color>
+    <color name="unit_light_orange">#f37a7b</color>
+    <color name="unit_transparent">#00541E1E</color>
 </resources>

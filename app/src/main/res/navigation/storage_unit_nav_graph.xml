@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/storage_unit_nav_graph"
+    app:startDestination="@id/homeUnitFragment">
+
+    <fragment
+        android:id="@+id/homeUnitFragment"
+        android:name="com.artemis.storageunitfirebase.fragments.HomeUnitFragment"
+        tools:layout="@layout/fragment_home_unit">
+        <action
+            android:id="@+id/action_homeUnitFragment_to_mainUnitFragment"
+            app:destination="@id/mainUnitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainUnitFragment"
+        android:name="com.artemis.storageunitfirebase.fragments.MainUnitFragment"
+        tools:layout="@layout/fragment_main_unit">
+        <action
+            android:id="@+id/action_mainUnitFragment_to_detailUnitFragment"
+            app:destination="@id/detailUnitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUnitFragment"
+        android:name="com.artemis.storageunitfirebase.fragments.DetailUnitFragment"
+        tools:layout="@layout/fragment_detail_unit">
+        <action
+            android:id="@+id/action_detailUnitFragment_to_homeUnitFragment"
+            app:destination="@id/homeUnitFragment" />
+        <argument
+            android:name="storageArgs"
+            app:argType="com.artemis.storageunitfirebase.model.StorageUnit" />
+    </fragment>
+</navigation>
