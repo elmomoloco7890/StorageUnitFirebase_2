@@ -28,5 +28,8 @@
         <action
             android:id="@+id/action_detailUnitFragment_to_homeUnitFragment"
             app:destination="@id/homeUnitFragment" />
+        <argument
+            android:name="storageArgs"
+            app:argType="com.artemis.storageunitfirebase.model.StorageUnit" />
     </fragment>
 </navigation>

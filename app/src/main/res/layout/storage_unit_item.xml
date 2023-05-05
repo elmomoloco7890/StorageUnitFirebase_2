@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="storageUnit"
+            type="com.artemis.storageunitfirebase.model.StorageUnit" />
 
+        <variable
+            name="storageClicked"
+            type="com.artemis.storageunitfirebase.data.events.StorageItemClickListener" />
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -22,16 +27,19 @@
                 android:id="@+id/textView9"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:text=""
+                android:text="@{storageUnit.unit_name}"
                 tools:text="@tools:sample/lorem"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="20dp"
                 android:textSize="26sp"
+                android:clickable="true"
+                android:onClick="@{()-> storageClicked.onItemClicked(storageUnit)}"
                 app:drawableEndCompat="@drawable/unit_arrow"
                 app:layout_constraintBottom_toTopOf="@+id/guideline5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:focusable="true" />
 
             <TextView
                 android:id="@+id/textView10"

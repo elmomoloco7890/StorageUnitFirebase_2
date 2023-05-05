@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/launch_to_main_txt"
             android:textSize="18sp"
+            android:onClick="@{()-> homeUnitFragment.launchToMain()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

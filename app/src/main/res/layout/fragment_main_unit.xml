@@ -7,6 +7,9 @@
         <variable
             name="mainUnitFragment"
             type="com.artemis.storageunitfirebase.fragments.MainUnitFragment" />
+        <variable
+            name="storageUnitAdapter"
+            type="com.artemis.storageunitfirebase.data.adapter.StorageUnitListAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,6 +24,7 @@
             android:layout_height="0dp"
             android:text="@string/hello_blank_fragment"
             tools:listitem="@layout/storage_unit_item"
+            android:adapter="@{storageUnitAdapter}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
